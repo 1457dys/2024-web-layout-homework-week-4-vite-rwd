@@ -1,7 +1,7 @@
 /* home-page */
 
 .home-header{
-  background-image: url(../assets/images/home-header-sm.png);
+  background-image: url('../../assets/images/home-header-sm.png');
   background-position:center;
   background-size: cover;
   height: 396px;
@@ -43,7 +43,7 @@
   margin-bottom: 8px
 }
 .co-branded-bg{
-  background-image: url(../assets/images/index-bg-sm.png);
+  background-image: url('../../assets/images/index-bg-sm.png');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,13 +177,13 @@
     max-width: 696px;
   }
   .co-branded-bg{
-    background-image: url(../assets/images/index-bg-md.png);
+    background-image: url('../../assets/images/index-bg-md.png');
   }
   .co-branded-img-double-A{
-    content: url(../assets/images/home-section4-1.png);
+    content: url('../../assets/images/home-section4-1.png');
   } 
   .co-branded-img-youth{
-    content: url(../assets/images/home-section4-2.png);
+    content: url('../../assets/images/home-section4-2.png');
   }
   .recommend-card{
     max-width:336px;
@@ -208,7 +208,7 @@
 }
 @media(min-width:992px) {
   .header-wrapper{
-    background-image: url(../assets/images/home-header.png);
+    background-image: url('../../assets/images/home-header.png');
     padding-top: 296px;
     padding-bottom: 296px;
     height: auto;
@@ -224,7 +224,7 @@
     justify-content: space-between;
   }
   .co-branded-bg{
-      background-image: url(../assets/images/index-bg.png);
+      background-image: url('../../assets/images/index-bg.png');
   }
   .co-branded-card{
     max-width:50%;
