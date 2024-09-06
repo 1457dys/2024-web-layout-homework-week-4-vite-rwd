@@ -1,0 +1,243 @@
+/* home-page */
+
+.home-header{
+  background-image: url(../assets/images/home-header-sm.png);
+  background-position:center;
+  background-size: cover;
+  height: 396px;
+}
+.header-text-wrapper{
+  height: 100%; 
+  text-align: right;
+}
+.header-headline{
+  font-size: 16px;
+}
+.header-slogan{
+  font-weight: 700;
+}
+.home-header .btn{
+  font-weight: 500;
+  padding: 6px 12px;
+}
+/* feature */
+.feature-img{
+  margin: 12px auto;
+  width: 84px;
+  height: 84px;
+}
+.feature{
+  margin-bottom: 8px;
+}
+.feature-section p{
+  max-width: 348px;
+  align-self: center;
+}
+/*classic co-branded*/
+.classic-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.classic-card{
+  margin-bottom: 8px
+}
+.co-branded-bg{
+  background-image: url(../assets/images/index-bg-sm.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.co-branded-section .headline{
+  color: #fff;
+}
+.co-branded-card{
+  margin-bottom: 24px;
+}
+.co-branded-series, .classic-series{
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase; /* 大寫 */
+
+}
+.recommend-list{
+  gap: 16px;
+}
+.recommend-card{
+  box-shadow: 0px 2px 6px #00000029;
+
+}
+.recommend-text{
+  height: 100%;
+}
+/* contact-form */
+.contact-text{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.contact-input-list input{
+  height: 36px;
+  background: none;
+  border: #000 solid 1px;
+}
+.contact-input-list label,.contact-input-list input,.contact-input-list textarea{
+  width: 100%;
+  display: block;
+}
+.contact-input-list label{
+  margin-bottom: 8px;
+}
+
+.contact-input-list textarea{
+  height: 136px;
+  background: none;
+  border: #000 solid 1px;
+}
+/* checkbox */
+.contact-input-list .hidden-checkbox {
+  display: none;
+}
+.contact-input-list .checkbox label {
+  display: inline-block;
+  vertical-align: middle; 
+}
+.contact-input-list .checkbox label span {
+  vertical-align: middle; 
+} 
+.contact-input-list .checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact-input-list .material-symbols-outlined.checked {
+  display: none;
+}
+
+.contact-input-list .hidden-checkbox:checked + label .unchecked {
+  display: none;
+}
+.contact-input-list .hidden-checkbox:checked + label .checked {
+  display: inline-block;
+}
+.contact-input-list .contact-form li{
+  margin-bottom: 16px;
+}
+.contact-input-list .checkbox{
+  margin-bottom: 24px;
+}
+/* btn-submit */
+.btn-submit{
+  width: 100%;
+  background: var(--color-primary);
+  border: none;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  transition: background 0.7s, width 0.5s; /*transition寫在原始狀態可以達成雙向的動畫 */
+}
+.btn-submit:hover{
+  background: var(--color-secondary);
+  width: 100%;
+}
+
+
+@media(min-width:576px) {
+  .home-header{
+    height: 787px;
+  }
+  .header-headline{
+    font-size: 24px;
+  }
+  .header-slogan{
+    font-size: 36px;
+}
+  .headline{
+    font-size: 36px;
+  }
+  .feature-list{
+    justify-content: space-between;
+  }
+  .feature-section p{
+    max-width: 100%;
+  }
+  .classic-section .col-4{
+    max-width: 336px;
+}
+  .co-branded-card{
+    max-width: 696px;
+  }
+  .co-branded-bg{
+    background-image: url(../assets/images/index-bg-md.png);
+  }
+  .co-branded-img-double-A{
+    content: url(../assets/images/home-section4-1.png);
+  } 
+  .co-branded-img-youth{
+    content: url(../assets/images/home-section4-2.png);
+  }
+  .recommend-card{
+    max-width:336px;
+  
+  }
+  .recommend-list{
+    gap: 24px;
+  }
+  .contact-wrapper{
+    max-width: 576px;
+    margin: 0 auto;
+  }
+  .btn-submit{
+    width: 348px;
+}
+}
+@media(min-width:768px){
+  .headline{
+    font-size: 48px;
+  }
+
+}
+@media(min-width:992px) {
+  .header-wrapper{
+    background-image: url(../assets/images/home-header.png);
+    padding-top: 296px;
+    padding-bottom: 296px;
+    height: auto;
+  }
+  .header-slogan{
+    font-size: 64px;
+}
+  .header-headline{
+    font-size: 36px;
+  }
+  .classic-list{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .co-branded-bg{
+      background-image: url(../assets/images/index-bg.png);
+  }
+  .co-branded-card{
+    max-width:50%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .classic-section .col-4{
+    max-width: calc(33.33% - 16px);
+}
+  .contact-wrapper{
+    max-width: 636px;
+  }
+  .btn-submit{
+    width: 416px;
+  }
+}

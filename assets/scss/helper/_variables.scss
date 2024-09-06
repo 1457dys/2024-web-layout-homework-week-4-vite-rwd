@@ -1,0 +1,12 @@
+/* var */
+:root {
+    --color-primary: #aa0601;
+    --color-secondary:#650300;
+    --color-light:#FBF2F2;
+    --padding-section: 40px;
+}
+@media(min-width:768px){
+    :root {
+        --padding-section: 80px;
+    }
+}

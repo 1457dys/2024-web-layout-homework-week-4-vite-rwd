@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>store</title>
+</head>
+<body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+    <!-- store-section -->
+    <section class="branch-section py-section">
+        <div class="container">
+        <div class="headline-container">
+            <h2 class="store-headline headline-left">門市據點</h2>
+        </div>
+        <!-- selector -->
+        <div class="store-selector d-flex ai-c">
+            <label for="store-select">選擇分店</label>
+            <div class="selection-container">
+            <select name="store-select" id="store-select" class="store-selection">
+                <option value="台北中山旗艦店">台北中山旗艦店</option>
+                <option value="台北綠園店">台北綠園店</option>
+                <option value="台中清水旗艦店">台中清水旗艦店</option>
+                <option value="高雄中正形象店">高雄中正形象店</option>
+                <option value="高雄夢時代店">高雄夢時代店</option>
+            </select>
+            <span class="material-symbols-outlined store-selection-down">
+                arrow_drop_down
+                </span>
+            </div>
+        </div>
+        <!-- store list -->
+        <div class="branch">
+            <ul class="branch-card ">
+                <li class="store-card branch-item">
+                    <picture class="branch-pic">
+                        <source media="(min-width: 992px)" srcset="../assets/images/storepage-1.png">
+                        <img src="../assets/images/store-1.png" alt="store-image-1" class="shop-img branch-img">
+                    </picture>
+                    <div class="branch-text-wrapper">
+                        <h3 class="store-title">台北中山旗艦店</h3>
+                        <ul class="store-detail-list">
+                            <li class="d-flex store-information">
+                                <span class="material-symbols-outlined store-detail-icon">call</span>
+                                <p>電話：(02)000-1234</p>
+                            </li>
+                            <li class="d-flex store-information">
+                                <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                                <p>營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="d-flex store-information">
+                                <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                                <p>地址：台北市中山區南京東路25巷2-1號</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="branch-map-wrapper">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/images/store-map@2x.png">
+                        <img src="../assets/images/store-map.png" alt="台北中山旗艦店-map" class="branch-map-img">
+                    </picture>
+                </li>
+            </ul>
+        </div>    
+    </section>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

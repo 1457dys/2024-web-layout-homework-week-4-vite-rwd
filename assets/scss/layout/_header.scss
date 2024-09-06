@@ -1,0 +1,63 @@
+.header .nav-h1{
+  width: calc(100% - 24px);
+  margin-left: 15px;
+  margin-right: auto;
+
+}
+.header .logo-img{
+  width: 80px;
+  margin-top: 16px;
+  margin-bottom: 15.44px;
+}
+.header .nav-item{
+  width: 50%;
+  text-align: center;
+}
+.header .nav-link{
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  border: #FFFFFF 1px solid;   
+  
+}
+.header .header-headline{
+  font-size: 16px;
+  font-weight: 400;
+}
+.header a{
+  transition: 0.3s;
+}
+.header a:hover:not(.logo-link) { /* :not(.logo-link)及調整 opacity 為參考助教寫法 */
+  font-weight: 700;
+} 
+@media(min-width:576px){
+  .header .nav-h1{
+      width: auto;
+      }
+  .header .nav-wrapper{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .header .nav-list{
+      flex-wrap: nowrap;
+  }
+  .header .nav-item{
+      width: auto;
+  }
+  .header .nav-link{
+      width: auto;
+      padding: 25px 12px;
+      border: none;
+  }
+  .header .nav-item .pr-0{
+      padding-right: 0;
+  }
+
+}
+@media(min-width: 768px) {
+  .header .nav-link{
+      font-size: 20px;
+      padding: 25px 32px;
+  }
+}

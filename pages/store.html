@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+    <!-- store-section -->
+    <section class="store-section py-section">
+      <div class="container">
+        <div class="headline-container">
+          <h2 class="store-headline headline-left">門市據點</h2>
+        </div>
+        <!-- selector -->
+        <div class="store-selector d-flex ai-c">
+          <label for="district-select">選擇縣市</label>
+          <div class="selection-container">
+            <select name="district-select" id="district-select" class="store-selection">
+              <option value="所有縣市">所有縣市</option>
+              <option value="台北市">台北市</option>
+              <option value="台中市">台中市</option>
+              <option value="高雄市">高雄市</option>
+            </select>
+            <span class="material-symbols-outlined store-selection-down">
+              arrow_drop_down
+              </span>
+            </div>
+        </div>
+        <!-- store list -->
+        <ul class="store-list row">
+          <li class="store-card col-4"><a href="store_tp-cs.html" class="store-link">
+            <img src="../assets/images/store-1.png" alt="store-image-1" class="shop-img">
+            <h3 class="store-title">台北中山旗艦店</h3>
+            <ul class="store-detail-list">
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">call</span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                <p>地址：台北市中山區南京東路25巷2-1號</p>
+              </li>
+            </ul>
+          <a href="#" class="btn">詳細資訊</a>
+        </a></li>
+        <li class="store-card col-4"><a href="#" class="store-link">
+          <img src="../assets/images/store-2.png" alt="store-image-2" class="shop-img">
+          <h3 class="store-title">台北綠園店</h3>
+            <ul class="store-detail-list">
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">call</span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                <p>地址：台北市中正區復興南路 132-1 號</p>
+              </li>
+            </ul>
+            <a href="#" class="btn">詳細資訊</a>
+          </a></li>
+          <li class="store-card col-4"><a href="#" class="store-link">
+            <img src="../assets/images/store-3.png" alt="store-image-3" class="shop-img">
+            <h3 class="store-title">台中清水旗艦店</h3>
+              <ul class="store-detail-list">
+                <li class="d-flex store-information">
+                  <span class="material-symbols-outlined store-detail-icon">call</span>
+                  <p>電話：(02)000-1234</p>
+                </li>
+                <li class="d-flex store-information">
+                  <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                  <p>營業時間：10:00-21:00</p>
+                </li>
+                <li class="d-flex store-information">
+                  <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                  <p>地址：台中市清水區經南一路 23 號 8 樓</p>
+                </li>
+              </ul>
+            <a href="#" class="btn">詳細資訊</a>
+          </a></li>
+          <li class="store-card col-4"><a href="#" class="store-link">
+            <img src="../assets/images/store-4.png" alt="store-image-4" class="shop-img">
+            <h3 class="store-title">高雄中正形象店</h3>
+            <ul class="store-detail-list">
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">call</span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                <p>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+              </li>
+            </ul>
+            <a href="#" class="btn">詳細資訊</a>
+          </a></li>
+          <li class="store-card col-4"><a href="#" class="store-link">
+            <img src="../assets/images/store-5.png" alt="store-image-5" class="shop-img">
+            <h3 class="store-title">高雄夢時代店</h3>
+                          <ul class="store-detail-list">
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">call</span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex store-information">
+                <span class="material-symbols-outlined store-detail-icon">location_on</span>
+                <p>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+              </li>
+              </ul>
+            <a href="#" class="btn">詳細資訊</a>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
